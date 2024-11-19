@@ -1,0 +1,64 @@
+CreativeWave-Solutions-Website/
+├── public/                       # Static public files
+│   ├── images/                   # Images accessible publicly
+│   │   ├── logo.png
+│   │   ├── banner.jpg
+│   │   └── favicon.ico
+│   └── robots.txt                # Robots exclusion file
+├── src/                          # Source files for the project
+│   ├── pages/                    # Page routes (Next.js file-based routing)
+│   │   ├── _app.js               # Custom App component (global setup)
+│   │   ├── _document.js          # Custom Document for overriding HTML structure
+│   │   ├── index.js              # Home page
+│   │   ├── api/                  # API routes (serverless functions)
+│   │   │   ├── contact.js        # API endpoint for contact form
+│   │   │   ├── portfolio.js      # API endpoint for portfolio data
+│   │   │   └── blog.js           # API endpoint for blog data
+│   │   ├── about/                #
+│   │   |    ├── index.js         # About page
+│   │   ├── contact/              #
+│   │   |    ├── index.js         # Contact page
+│   │   ├── portfolio/            #
+│   │   |    ├── index.js         # Portfolio page
+│   │   ├── services/             # Nested service pages
+│   │   │   ├── index.js          # Services listing
+│   │   │   └── [service].js      # Dynamic service detail page
+│   │   ├── blog/                 # Nested blog pages
+│   │   │   ├── index.js          # Blog listing
+│   │   │   └── [slug].js         # Dynamic blog post page
+│   │   ├── admin-panel/          # Nested blog pages
+│   │   |    └── index.js         # Custom 404 error page
+|   │   │    ├── blog-editor/      # 
+│   │   |         └── index.js      # 
+|   │   │    ├── portfolio-editor/ # 
+│   │   |         └── index.js      # 
+|   │   │    ├── services-editor/ # 
+│   │   |         └── index.js      # 
+│   │   ├── page-not-found/       # Nested blog pages
+│   │   |    └── index.js         # Custom 404 error page
+│   ├── components/               # Reusable components
+│   │   ├── Header.js             # Site header
+│   │   ├── Footer.js             # Site footer
+│   │   ├── Button.js             # Custom button component
+│   │   ├── TestimonialSlider.js  # Testimonial slider component
+│   │   ├── PortfolioItem.js      # 
+│   │   └── ServiceCard.js        # Card component for services
+│   ├── styles/                   # Styles
+│   │   ├── globals.css           # Global styles
+│   │   ├── Home.module.css       # Home page-specific styles
+│   │   ├── Admin.module.css       # Home page-specific styles
+│   │   └── Services.module.css   # Services page-specific styles
+│   ├── lib/                      # Libraries and helper functions
+│   │   ├── api.js                # Centralized API functions
+│   │   └── validation.js         # Validation utilities
+│   ├── context/                  # Context API setup for global state
+│   │   ├── AuthContext.js
+│   │   └── PortfolioContext.js
+│   └── hooks/                    # Custom React hooks
+│       ├── useAuth.js            # Authentication hook
+│       └── useFetch.js           # Data fetching hook
+├── tailwind.config.js            # Tailwind CSS configuration
+├── next.config.js                # Next.js configuration
+├── package.json                  # Dependencies and scripts
+├── README.md                     # Project documentation
+└── .gitignore                    # Git ignored files
