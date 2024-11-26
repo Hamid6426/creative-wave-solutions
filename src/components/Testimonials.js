@@ -44,7 +44,7 @@ const Testimonials = () => {
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
           What Our Clients Say
         </h2>
-        <div className="relative max-w-3xl mx-auto p-6 shadow-md rounded-lg bg-gray-50 text-center">
+        <div className="relative max-w-3xl mx-auto p-6 shadow-md rounded-lg bg-gray-100 text-center">
           {/* Current Testimonial */}
           <Image
             src={testimonials[currentIndex].image}
@@ -65,13 +65,13 @@ const Testimonials = () => {
           <div className="flex justify-between mt-6">
             <button
               onClick={handlePrev}
-              className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+              className="px-4 py-2 bg-green-600 rounded hover:bg-green-400 font-bold text-white"
             >
               Previous
             </button>
             <button
               onClick={handleNext}
-              className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+              className="px-4 py-2 bg-green-600 rounded hover:bg-green-400 font-bold text-white"
             >
               Next
             </button>

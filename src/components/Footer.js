@@ -1,24 +1,25 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
     <footer className="font-sans tracking-wide bg-gray-100 py-10 px-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
         {/* Quick Links */}
         <div>
           <h4 className="text-green-600 font-semibold text-lg mb-6">Quick Links</h4>
           <ul className="space-y-5">
             <li>
-              <a href="/about-us" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">About Us</a>
+              <Link href="/about" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">About Us</Link>
             </li>
             <li>
-              <a href="/blog" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Blog</a>
+              <Link href="/portfolio" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Our Portfolio</Link>
             </li>
             <li>
-              <a href="/careers" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Careers</a>
+              <Link href="/blogs" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Blogs</Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Contact</a>
+              <Link href="/contact" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -28,35 +29,16 @@ export default function Footer() {
           <h4 className="text-green-600 font-semibold text-lg mb-6">Services</h4>
           <ul className="space-y-5">
             <li>
-              <a href="/services/web-development" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Web Development</a>
+              <Link href="/services/web-development" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Web Development</Link>
             </li>
             <li>
-              <a href="/services/digital-marketing" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Digital Marketing</a>
+              <Link href="/services/digital-marketing" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Digital Marketing</Link>
             </li>
             <li>
-              <a href="/services/branding" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Branding</a>
+              <Link href="/services/branding-design" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Branding & Design</Link>
             </li>
             <li>
-              <a href="/services/ui-ux" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">UI/UX Design</a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Platforms */}
-        <div>
-          <h4 className="text-green-600 font-semibold text-lg mb-6">Platforms</h4>
-          <ul className="space-y-5">
-            <li>
-              <a href="/platforms/hubspot" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Hubspot</a>
-            </li>
-            <li>
-              <a href="/platforms/marketing-tools" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Marketing Tools</a>
-            </li>
-            <li>
-              <a href="/platforms/automation-tools" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Automation Tools</a>
-            </li>
-            <li>
-              <a href="/platforms/analytics" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Analytics</a>
+              <Link href="/services/ai-development" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">AI Development</Link>
             </li>
           </ul>
         </div>
@@ -66,16 +48,16 @@ export default function Footer() {
           <h4 className="text-green-600 font-semibold text-lg mb-6">Company</h4>
           <ul className="space-y-5">
             <li>
-              <a href="/privacy-policy" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Privacy Policy</a>
+              <Link href="/privacy-policy" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Privacy Policy</Link>
             </li>
             <li>
-              <a href="/terms-of-service" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Terms of Service</a>
+              <Link href="/terms-of-service" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Terms of Service</Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Contact</a>
+              <Link href="/partners" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">Partners</Link>
             </li>
             <li>
-              <a href="/faq" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">FAQs</a>
+              <Link href="/faqs" className="hover:text-green-600 text-gray-700 text-[15px] transition-all">FAQs</Link>
             </li>
           </ul>
         </div>

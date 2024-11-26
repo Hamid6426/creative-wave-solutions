@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -12,21 +13,21 @@ const projects = [
     id: 2,
     title: "Brand Identity Design",
     description: "A complete brand design package for startups.",
-    image: "/e-commerce.png",
+    image: "/branding.png",
     link: "/portfolio/brand-identity",
   },
   {
     id: 3,
     title: "Mobile App Development",
     description: "A sleek and intuitive app for managing finances.",
-    image: "/e-commerce.png",
+    image: "/app-dev.png",
     link: "/portfolio/mobile-app",
   },
 ];
 
 const PortfolioShowcase = () => {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="50 py-12">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
           Our Portfolio
@@ -58,7 +59,15 @@ const PortfolioShowcase = () => {
               </div>
             </div>
           ))}
-        </div>
+  <div></div>
+          <Link
+            href="/services"
+            className="bg-green-600 hover:bg-green-400 font-bold text-white py-3 text-lg rounded-lg text-center"
+          >
+            Check Full Catalogue
+          </Link>
+          <div></div>
+    </div>
       </div>
     </section>
   );

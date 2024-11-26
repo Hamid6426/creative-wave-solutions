@@ -39,7 +39,7 @@ const PortfolioCarousel = () => {
 
   return (
     <section className="bg-gray-50 py-12">
-      <div className="container mx-auto px-6 text-center">
+      <div className="mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Our Portfolio</h2>
         <div className="relative">
           {/* Current Project */}
