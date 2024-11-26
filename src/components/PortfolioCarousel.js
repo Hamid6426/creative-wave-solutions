@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 const projects = [
   {
@@ -44,7 +45,7 @@ const PortfolioCarousel = () => {
         <div className="relative">
           {/* Current Project */}
           <div className="p-6 bg-white rounded-lg shadow-md">
-            <img
+            <Image
               src={projects[currentIndex].image}
               alt={projects[currentIndex].title}
               className="w-full h-64 object-cover rounded-lg"
