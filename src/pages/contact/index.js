@@ -54,7 +54,7 @@ const ContactUs = () => {
           </div>
         ) : (
           <form
-            className="bg-white p-8 rounded-lg shadow-md max-w-lg mx-auto"
+            className="bg-[#eee] border border-[#bbb] p-8 rounded-lg shadow-xl max-w-lg mx-auto"
             onSubmit={handleSubmit}
           >
             {/* Name */}

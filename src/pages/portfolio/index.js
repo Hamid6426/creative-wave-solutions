@@ -34,7 +34,7 @@ const portfolioProjects = [
 
 const Portfolio = () => {
   return (
-    <section className="bg-gray-50 py-12 mx-auto px-8">
+    <section className="bg-white py-12 mx-auto px-8">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
         Our Portfolio
       </h2>
@@ -42,7 +42,7 @@ const Portfolio = () => {
         {portfolioProjects.map((project) => (
           <div
             key={project.id}
-            className="bg-white rounded-lg shadow-md overflow-hidden"
+            className="bg-[#eee] border border-[#bbb] rounded-lg shadow-md overflow-hidden"
           >
             <Image
               src={project.image}

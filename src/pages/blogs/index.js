@@ -43,7 +43,7 @@ export default function Index() {
       {blogs.map((blog) => (
         <div
           key={blog.id}
-          className="w-3/4 p-4 mb-6 bg-gray-100 shadow rounded flex flex-col"
+          className="w-3/4 p-4 mb-6 bg-[#eee] border border-[#bbb] shadow rounded-xl flex flex-col"
         >
           {/* Title */}
           <h2 className="text-2xl font-semibold mb-2">{blog.title}</h2>

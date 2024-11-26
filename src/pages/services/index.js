@@ -40,14 +40,14 @@ const services = [
 
 const ServiceHighlights = () => {
   return (
-    <section className="bg-gray-200 pb-12">
+    <section className="bg-white pb-12">
       <div className="container mx-auto px-6 text-center py-4">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Our Services</h2>
         <div className="grid gap-8 md:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.id}
-              className="flex flex-col justify-center items-center bg-white shadow-md p-6 rounded-lg hover:shadow-lg transition-shadow"
+              className="flex flex-col justify-center items-center border border-[#bbb] bg-[#eee] shadow-md p-6 rounded-lg hover:shadow-lg transition-shadow"
             >
               <div className="mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold text-gray-700">
