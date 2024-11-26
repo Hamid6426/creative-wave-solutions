@@ -8,7 +8,7 @@ const options = {};
 
 // Ensure client is a singleton to prevent multiple connections in development
 if (!uri) {
-  throw new Error("Please add your MongoDB URI to .env.local");
+  throw new Error("Please add your MongoDB URI to .env.local or production");
 }
 
 if (process.env.NODE_ENV === "development") {
